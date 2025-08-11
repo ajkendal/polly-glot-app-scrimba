@@ -1,21 +1,84 @@
-# React + TypeScript + Vite
+# PollyGlot
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A language-learning quiz app built with **Vite**, **React**, **TypeScript**, and **SCSS Modules**, inspired by the Scrimba **AI Engineer Path** project.
 
-While this project uses React, Vite supports many popular JS frameworks. [See all the supported frameworks](https://vitejs.dev/guide/#scaffolding-your-first-vite-project).
+## 📚 Overview
 
-## Deploy Your Own
+PollyGlot is a simple, interactive quiz application that helps users test their vocabulary knowledge in multiple languages. It leverages the speed of **Vite** for development, the type safety of **TypeScript**, the component-based architecture of **React**, and the styling power of **SCSS**.
 
-Deploy your own Vite project with Vercel.
+The app displays a word in a given language and provides multiple choice answers for the translation. The user selects an answer, receives immediate feedback, and can move through a series of questions to test their knowledge.
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/vercel/examples/tree/main/framework-boilerplates/vite-react&template=vite-react)
+---
 
-_Live Example: https://vite-react-example.vercel.app_
+## 🛠️ Tech Stack
 
-### Deploying From Your Terminal
+- **Vite** – fast build tool and dev server
+- **React** – UI library for building components
+- **TypeScript** – strongly typed JavaScript for safer, more maintainable code
+- **SCSS** – enhanced CSS with variables, nesting, and mixins
 
-You can deploy your new Vite project with a single command from your terminal using [Vercel CLI](https://vercel.com/download):
+---
 
-```shell
-$ vercel
+## 🚀 Getting Started
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/your-username/pollyglot.git
+cd pollyglot
 ```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Run the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL shown in your terminal (e.g., http://localhost:5173) to view the app.
+
+---
+
+### 📦 Build for production
+
+```bash
+npm run build
+```
+
+This will create an optimized production build in the dist/ folder.
+
+---
+
+### 🎨 Styling with SCSS
+
+All styles are organized in .scss files for better maintainability. You can customize variables, color palettes, and mixins in the styles/ folder to easily adjust the look and feel of the app.
+
+---
+
+### 📂 Project Structure
+
+```csharp
+polly-glot-app-scrimba/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # React components
+│   ├── data/        # Quiz data
+│   ├── styles/      # SCSS styles
+│   ├── App.tsx      # Root React component
+│   ├── main.tsx     # Entry point
+├── package.json
+├── vite.config.ts
+└── README.md
+```
+
+---
+
+### 💡 Notes
+
+- This project was built as part of the Scrimba AI Engineer Path curriculum and adapted for personal learning.
+- You can easily extend it with more languages, difficulty levels, or API-based word lists.
