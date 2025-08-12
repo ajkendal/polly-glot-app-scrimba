@@ -65,8 +65,7 @@ You can easily deploy this project to Vercel by:
 1. Creating a Vercel account
 2. Importing your GitHub repository into Vercel
 3. Configuring environment variables (if any) in the Vercel dashboard
-
-## Deploying — your app will be live in seconds!
+4. Deploying — your app will be live in seconds!
 
 ---
 
