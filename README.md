@@ -58,9 +58,37 @@ This will create an optimized production build in the dist/ folder.
 
 ---
 
-### 🎨 Styling with SCSS
+### Deploy to Vercel
 
-All styles are organized in .scss files for better maintainability. You can customize variables, color palettes, and mixins in the styles/ folder to easily adjust the look and feel of the app.
+You can easily deploy this project to Vercel by:
+
+1. Creating a Vercel account
+2. Importing your GitHub repository into Vercel
+3. Configuring environment variables (if any) in the Vercel dashboard
+
+## Deploying — your app will be live in seconds!
+
+---
+
+### 🎨 Styling with SCSS Modules
+
+PollyGlot uses SCSS Modules for styling, meaning styles are automatically scoped to the component where they’re imported.
+
+Example:
+
+```tsx
+import styles from './Button.module.scss';
+
+export default function Button() {
+  return <button className={styles.primary}>Click me</button>;
+}
+```
+
+With this approach:
+
+- No global style conflicts
+- Clear mapping between components and their styles
+- Support for variables, nesting, and mixins
 
 ---
 
@@ -70,8 +98,8 @@ All styles are organized in .scss files for better maintainability. You can cust
 polly-glot-app-scrimba/
 ├── public/          # Static assets
 ├── src/
+│   ├── assets/      # Assets
 │   ├── components/  # React components
-│   ├── data/        # Quiz data
 │   ├── styles/      # SCSS styles
 │   ├── App.tsx      # Root React component
 │   ├── main.tsx     # Entry point
@@ -86,3 +114,10 @@ polly-glot-app-scrimba/
 
 - This project was built as part of the Scrimba AI Engineer Path curriculum and adapted for personal learning.
 - You can easily extend it with more languages, difficulty levels, or API-based word lists.
+
+---
+
+### 🔮 Future Updates
+
+- **Error State** – Add user-friendly error handling for failed API calls or invalid data.
+- **Stretch Goal** – Continue adding more translated text displayed as conversation bubbles, creating a flowing, chat-like experience for users.
