@@ -6,6 +6,8 @@ import './App.scss';
 function App() {
   const [count, setCount] = useState(0);
 
+  console.log('test api key', import.meta.env.VITE_TEST_API_KEY);
+
   return (
     <>
       <div>
