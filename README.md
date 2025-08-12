@@ -16,9 +16,10 @@ You can view the original design mockups here: [🎨 Figma Design – PollyGlot]
 
 - **Vite** – fast build tool and dev server
 - **React** – UI library for building components
-- **Vercel** – fast, reliable hosting and deployment platform
 - **TypeScript** – strongly typed JavaScript for safer, more maintainable code
-- **SCSS** – enhanced CSS with variables, nesting, and mixins
+- **SCSS Modules** – component-scoped styles with variables, nesting, and mixins
+- **OpenAI API** – AI-powered language translation and generation
+- **Vercel** – fast, reliable hosting and deployment platform
 - **Figma** – collaborative interface design and prototyping tool
 
 ---
