@@ -4,7 +4,7 @@ const Header = () => {
   return (
     <header className={styles['header']}>
       <div className={styles['logo']}>
-        <img src='src/assets/parrot.png' alt='PollyGlot Logo' />
+        <img src='/static/images/parrot.png' alt='PollyGlot Logo' />
       </div>
       <div className={styles['header-content']}>
         <h1 className={styles['title']}>PollyGlot</h1>
