@@ -8,14 +8,18 @@ PollyGlot is a simple, interactive quiz application that helps users test their 
 
 The app displays a word in a given language and provides multiple choice answers for the translation. The user selects an answer, receives immediate feedback, and can move through a series of questions to test their knowledge.
 
+You can view the original design mockups here: [🎨 Figma Design – PollyGlot](https://www.figma.com/design/5zQQiaSDdUu8AqVGlg9PZ3/OpenAi-API---PollyGlot?node-id=1-168&t=VBu5mK7ufECFQWA1-1)
+
 ---
 
 ## 🛠️ Tech Stack
 
 - **Vite** – fast build tool and dev server
 - **React** – UI library for building components
+- **Vercel** – fast, reliable hosting and deployment platform
 - **TypeScript** – strongly typed JavaScript for safer, more maintainable code
 - **SCSS** – enhanced CSS with variables, nesting, and mixins
+- **Figma** – collaborative interface design and prototyping tool
 
 ---
 

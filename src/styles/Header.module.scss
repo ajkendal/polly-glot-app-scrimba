@@ -1,0 +1,46 @@
+@use './_colors.scss' as *;
+
+.header {
+  width: 100%;
+  max-height: 213px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  background-image: url('src/assets/worldmap.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 5px;
+  padding: 40px 0;
+}
+
+.logo {
+  flex-basis: 20%;
+  img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+.header-content {
+  flex-basis: 60%;
+  .title {
+    font-family: 'Big Shoulders', sans-serif;
+    color: $green;
+    font-weight: 800;
+    font-size: 43.42px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 0;
+  }
+  .subtitle {
+    font-weight: 600;
+    color: $white;
+    font-size: 12.21px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin: 0;
+  }
+}
