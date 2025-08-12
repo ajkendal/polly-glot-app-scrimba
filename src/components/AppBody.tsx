@@ -103,7 +103,8 @@ const AppBody = () => {
                 checked={selectedLanguage === 'French'}
               />
               <label htmlFor='french'>
-                French <img src='src/assets/fr-flag.png' alt='French Flag' />
+                French{' '}
+                <img src='/static/images/fr-flag.png' alt='French Flag' />
               </label>
               <br />
               <input
@@ -117,7 +118,8 @@ const AppBody = () => {
                 checked={selectedLanguage === 'Spanish'}
               />
               <label htmlFor='spanish'>
-                Spanish <img src='src/assets/sp-flag.png' alt='Spain Flag' />
+                Spanish{' '}
+                <img src='/static/images/sp-flag.png' alt='Spain Flag' />
               </label>
               <br />
               <input
@@ -131,7 +133,8 @@ const AppBody = () => {
                 checked={selectedLanguage === 'Japanese'}
               />
               <label htmlFor='german'>
-                Japanese <img src='src/assets/jpn-flag.png' alt='Japan Flag' />
+                Japanese{' '}
+                <img src='/static/images/jpn-flag.png' alt='Japan Flag' />
               </label>
             </div>
           )}
