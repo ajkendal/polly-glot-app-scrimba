@@ -1,7 +1,7 @@
 import styles from '../styles/AppBody.module.scss';
 import { useState } from 'react';
 import { LoadingSVG } from '../assets/icons';
-import OpenAI from 'openai';
+
 import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
 
 const AppBody = () => {
@@ -12,10 +12,6 @@ const AppBody = () => {
   const [translatedText, setTranslatedText] = useState('');
   //const [isError, setIsError] = useState(false);
   // const [previousTranslations, setPreviousTranslations] = useState([{}]);
-  const openai = new OpenAI({
-    apiKey: import.meta.env.VITE_OPEN_API_KEY,
-    dangerouslyAllowBrowser: true,
-  });
 
   const messages: ChatCompletionMessageParam[] = [
     {
@@ -45,16 +41,25 @@ const AppBody = () => {
 
   async function fetchTranslate() {
     try {
-      const response = await openai.chat.completions.create({
-        model: 'gpt-4.1-nano',
-        messages: messages,
-        temperature: 0,
+      const url =
+        'https://pollyglot-openai-api-worker.ajkendal-openai.workers.dev/';
+
+      const response = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(messages),
       });
 
-      setTranslatedText(response.choices[0].message.content ?? '');
-    } catch (error) {
-      console.error(error);
-    }
+      const data = await response.json();
+
+      if (!response.ok) {
+        console.error(`Worker Error: ${data.error}`);
+      }
+
+      setTranslatedText(data.content);
+    } catch (e) {}
     setIsLoading(false);
   }
 
