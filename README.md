@@ -20,6 +20,7 @@ You can view the original design mockups here: [🎨 Figma Design – PollyGlot]
 - **SCSS Modules** – component-scoped styles with variables, nesting, and mixins
 - **OpenAI API** – AI-powered language translation and generation
 - **Vercel** – fast, reliable hosting and deployment platform
+- **Cloudflare** – CDN, security, and performance optimization for web applications
 - **Figma** – collaborative interface design and prototyping tool
 
 ---
