@@ -2,8 +2,6 @@ import styles from '../styles/AppBody.module.scss';
 import { useState } from 'react';
 import { LoadingSVG } from '../assets/icons';
 
-import type { ChatCompletionMessageParam } from 'openai/resources/chat/completions';
-
 const AppBody = () => {
   const [textToTranslate, setTextToTranslate] = useState('');
   const [selectedLanguage, setSelectedLanguage] = useState('French');
@@ -13,7 +11,7 @@ const AppBody = () => {
   //const [isError, setIsError] = useState(false);
   // const [previousTranslations, setPreviousTranslations] = useState([{}]);
 
-  const messages: ChatCompletionMessageParam[] = [
+  const messages = [
     {
       role: 'system',
       content: `I need the sentance provided translated to ${selectedLanguage}`,
